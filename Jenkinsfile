@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        build(job: 'ProyectoMaven', quietPeriod: 2)
+        build(job: 'JOB3', quietPeriod: 2, wait: true)
       }
     }
 
